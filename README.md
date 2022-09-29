@@ -4,9 +4,10 @@ Este es el repositorio de la asignatura ***Planificación y Administración de R
 
 1. Tema 1
 2. Tema 2
-
--Hola
-+Adios
+    
+    -Hola
+    
+    +Adios
     - Pepe
 
 <center>
