@@ -4,17 +4,19 @@ ut2-a1. Ejercicios modelo OSI
     
 El nivel 1 (Físico)
 
-el nivel 2 (enlace)
+El nivel 2 (enlace)
 
-el nivel 3 (red)
+El nivel 3 (red)
+
+El nivel 4 (tranporte)
 
    2. ¿Qué niveles OSI son los niveles de soporte de usuario? 
 
 El nivel 5 (sesión)
 
-el nivel 6 (presentación) 
+El nivel 6 (presentación) 
 
-el nivel 7(aplicación)
+El nivel 7(aplicación)
 
    3. ¿Cómo están OSI e ISO relacionadas entre sí? 
 
@@ -39,7 +41,7 @@ Nivel 7: Aplicación
 
    5. ¿Cómo pasa la información de un nivel OSI al siguiente? 
 
-pasa del nivel mas alto (7) en la maquina A hasta el nivel mas
+Pasa del nivel mas alto (7) en la maquina A hasta el nivel mas
 bajo (1) de la misma, y se envía en lujo de bits al nivel mas bajo
 (1) de la maquina B y sube hasta el nivel mas alto (7) de la
 maquina B.
@@ -106,27 +108,64 @@ Liberación de la conexión
 
    12. ¿Cuál es la diferencia entre una dirección de punto en servicio, una dirección lógica y una dirección fisica? 
   
+Direccionamiento lógico: proporcionado por el nivel de enlace de datos gestiona los problemas de direcciones locales si un paquete cruza la frontera
+de la red es necesario tener otro tipo de direcciones para
+distinguir los sistemas origen de los del destino
+
+Punto de servicio: las computadoras suelen ejecutar a
+menudo varios programas al mismo tiempo por esa razón la
+entrega desde el origen al destino signiica la entrega no solo de
+una pc a otra sino también desde un proceso especiico
+
+Direccionamiento físico: si es necesario distribuir las tramas
+por distintos sistemas de la red, el nivel de enlace de datos
+añade una cabecera a la trama para deinir la dirección física del
+emisor (dirección fuente) y/o receptor (dirección destino) de la
+trama.
+
   13. ¿Cuáles son las responsabilidades del nivel de sesión? 
 
+Control de dialogo
+
+Sincronización
+
   14. ¿Cuáles son las responsabilidades del nivel de presentación? 
+
+Traducción
+
+Cifrado
+
+Compresión
     
   15. ¿Cuál es el objetivo de la traducción en el nivel de presentación? 
 
-  16. Indique alguno de los servicios proporcionados por el nivel de aplicación. 
+Traducción
+
+Cifrado
+
+Compresión
+
+  16. Indique alguno de los servicios proporcionados por el nivel de aplicación.
+
+Terminal virtual de red
+
+Servicios de correo
 
   17.  ¿Cómo se relacionan los niveles de la familia del protocolo TCP/IP con los niveles del modelo OSI?
 
-  18. El nivel____________ decide la localización de los puntos de sincronización. 
+Mediante el nivel de aplicación
+
+  18. El nivel de sesión decide la localización de los puntos de sincronización. 
 
     transporte
-    sesión
+    sesión (escogi esta opción)
     presentación
     aplicación
 
-  19. En el nivel _______________, la unidad de datos se denomina trama.
+  19. En el nivel de enlace de datos, la unidad de datos se denomina trama.
 
     físico
-    enlace de datos
+    enlace de datos (escogi esta opcón)
     red
     transporte
 
@@ -135,11 +174,14 @@ Liberación de la conexión
     enlace de datos
     sesión
     transporte
-    aplicación
+    aplicación (escogi esta opcón)
 
  21. A medida que los paquetes de datos se mueven  de los niveles inferiores a los superiores las cabeceras:
 
-  
+    añadidas (escogi esta opción)
+    eliminadas
+    recolocadas
+    modificadas
 
 
 
