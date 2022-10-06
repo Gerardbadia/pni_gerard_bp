@@ -57,15 +57,53 @@ nivel procesa y elimina los datos que son para el.
 
    7. ¿Cuáles son las responsabilidades del nivel físico? 
 
+Características físicas de las interfases y el medio
+
+Representación de los bits
+
+Tasa de datos
+
+Sincronización de los bits
+
 
    8. ¿Cuáles son las responsabilidades del nivel de enlace? 
 
+Tramado
+
+Direccionamiento físico
+
+Control de lujo
+
+Control de errores
+
+
    9. ¿Cuáles son las responsabilidades del nivel de red? 
+
+ Direccionamiento lógico
+
+Encaminamiento
 
    10. ¿Cuáles son las responsabilidades del nivel de transporte? 
 
+
+ Direccionamiento en punto de servicio.
+
+Segmentación y reensamblado.
+
+Control de conexión
+
+Control de lujo
+
+Control de errores
+
    11. El nivel de transporte crea una conexión entre el origen y el destino. ¿Cuáles son los tres eventos involucrados en la conexión? 
-    
+   
+Establecimiento de la conexión
+
+Transferencia de datos
+
+Liberación de la conexión
+
    12. ¿Cuál es la diferencia entre una dirección de punto en servicio, una dirección lógica y una dirección fisica? 
   
   13. ¿Cuáles son las responsabilidades del nivel de sesión? 
