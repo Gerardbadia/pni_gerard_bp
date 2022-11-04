@@ -36,9 +36,11 @@ El material usado será el siguiente:
 + RJ45
 + Conector hembra
 
-![RJ45](6ca04f47-771b-467c-a938-e1a9948b7f01.jpg)
-![Crimpadora y cable](39dcb33f-68ab-4177-a7db-4a97f977c659.jpg)
-![Ponchadora y conector hembra](97bd97c6-4c1a-490e-8d1a-60f974728bb9.jpg)
+![RJ45](rj45.jpg)
+
+![Crimpadora y cable](crimpadoraycable.jpg)
+
+![Ponchadora y conector hembra](ponchadorayhembra.png)
 #### ***Desarrollo***. <a name="id4"></a>
 
 Primero tomamos un cable, cortamos los extremos para poder desenrollar los cables que tiene dentro y ordenarlos y hacerlos que queden a la misma altura para que haya un buen contacto con las cabeceras.
