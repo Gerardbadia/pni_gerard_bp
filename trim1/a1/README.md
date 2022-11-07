@@ -35,7 +35,7 @@ Realizar las siguientes conversiones entre sistemas numéricos. Para cada una de
 
          b) 11011
          
-          Solución: 
+          Solución: 3-3 luego 11011(2  es 33(8 
 
 4. Para pasar de octal a binario:
 
@@ -45,14 +45,16 @@ Realizar las siguientes conversiones entre sistemas numéricos. Para cada una de
 
          b) 14276
          
-          Solución:
+          Solución:  001100010111110
          
 5. Para pasar de binario a hexadecimal:
 
-        a) 110001000 Solución:
-        b) 100010 Solución:
+        a) 110001000 Solución: 188
+
+        b) 100010 Solución:  116
 
 6. Para pasar de hexadecimal a binario:
 
-        a) 86BF Solución:
-        b) 2D5E Solución: 
+        a) 86BF Solución: 1000011010111111
+ 
+        b) 2D5E Solución: 0010110101011110
