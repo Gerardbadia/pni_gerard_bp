@@ -147,9 +147,16 @@ Nos permite ver y configurar la tabla de rutas de nuestro equipo. Algunas opcion
 
 + Usa el comando `route` para ver la puerta de enlace de tu equipo. ¿Cuál es tu puerta de enlace?
 
+
 + Borra la puerta de enlace usando el comando `route del default gw ip_gateway`. A continuación, ejecuta el comando `route` para comprobar que ya no hay puerta de enlace. Intenta navegar por internet y verás que tampoco puedes. Haz una captura de pantalla con la salida del comando `route` y del resultado de `ping 8.8.8.8` ¿Cómo interpretas el mensaje que te devuelve el `ping`?
+![route](img/1.PNG)
+![route](img/2.PNG)
+
+El mensaje que me devuelve es porque no detecta una direccion para resolver. 
 
 + Vuelve a configurar la puerta de enlace usando el comando `route add default gw ip_gateway` y comprueba que ya ha vuelto la puerta de enlace con el comando `route`.
+![route](img/3.PNG)
+
 
 ***5. Comando netstat (Línux y Windows)***
 
@@ -164,13 +171,39 @@ Nos muestra las conexiones que tiene nuestro host abiertas con la red. Algunas o
 **Ejercicios**
 
 + Abre una página web cualquiera y luego ejecuta el comando `netstat -t` para que nos muestre las conexiones que tenemos abiertas por tcp. Pon una captura de pantalla del resultado y explica lo que es cada una de las columnas que aparecen.
+![route](img/4.PNG)
+
+Protocolo:Indica el protocolo usado por el socket
+
+Recibidos:Los paquetes que reciben
+
+Enviados:Los paquetes que envian
+
+direccion local:Direccion del equipo
+
+direccion remota:Cuando navegas por internet esa dirección es la que detectan los sitios web que estás visitando
+
+Estado:El tiempo que tar en conectarse 
 
 
 + Ahora espera unos segundos y vuelve a ejecutar `netstat -tn`. Comprobarás que algunas de las conexiones se han cerrado o están esperando para cerrarse. Además con la opción **-n** verás los resultados en formato numérico. Pon una captura de pantalla y explica la diferencia entre ***Established***, ***Time_wait*** y ***Close_Wait***.
 
+![route](img/5.PNG)
+
+***Established***: El estado se establecio correctamente 
+
+***Time_wait***:El estado esta en estado de espera para ponder conectarse
+
+***Close_Wait***:El tiempo de espera se cerro
+
 + Ejecuta ahora la orden `netstat -at` para que muestre las tanto las conexiones tcp abiertas como los puertos que están a la escucha. Copia una captura de pantalla donde se vean los puertos que tienes escuchando, explica qué significan los asteriscos en la columna ***“Foreign address”*** e investiga si tener esos puertos abiertos es normal o supone una amenaza.
+![route](img/6.PNG)
+
+quiere decir que la máquina local está esperando a que otra máquina remota envíe datos. No es peligroso tener los puertos de esa manera
 
 + Ejecuta el comando `netstat -s` para ver las estadísticas de red y haz una captura en la que se vean cuantos paquetes tcp has recibido y cuantos de ellos han sido erroneos.
+![route](img/7.PNG)
+
 
 ***6. Comando arp (Línux y Windows)***
 
@@ -184,6 +217,7 @@ Se usa para mostrar y administrar la caché `ARP` de nuestro equipo. Las opcione
 **Ejercicios**
 
 + Borra toda la caché ARP con el comando `arp -d *`. A continuación haz un ping a la puerta de enlace. Pon una captura de la tabla ARP en que se vea que solo está la puerta de enlace y su mac.
+![route](img/8.PNG)
 
 + Ahora borra manualmente la entrada arp de la puerta de enlace con la orden `arp -d ip_puertadeenlace`. Luego introduce manualmente una mac falsa para la puerta de enlace en la tabla arp con el comando `arp -s ip_puertadeenlace aa:bb:cc:dd:ee:ff` Haz una captura de pantalla en que se vea el resultado del comando arp -a y de hacer un ping a google. Explica por qué ahora no hay internet.
 
@@ -200,3 +234,6 @@ Este comando nos da información sobre la resolución de nombres dns. Nos dice a
 
 Averigua el nombre del servidor DNS de 
 https://www.puertodelacruz.es . A continuación, ejecutamos el comando nslookup nombreServidorDNS y luego el comando `nslookup nombreServidorDNS 8.8.8.8`. Explica las causas de las diferencias que hay entre los resultados de las dos consultas.
+![route](img/9.PNG)
+
+La diferencia es que en la pagina web no detecta el dns y en el 8.8.8.8 si lo detecta
