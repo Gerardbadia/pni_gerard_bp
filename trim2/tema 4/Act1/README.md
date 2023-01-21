@@ -26,6 +26,7 @@ Este comando nos permite ver datos relacionados con la configuración de red de 
 
 + Use el comando ***`ipconfig /all`*** para ver la dirección MAC de tu equipo.  Y la siguiente aplicación <http://coffer.com/mac_find/> para rellenar la siguiente tabla.
 
+![resultado](img/2023-01-10_09-27.png)
 
 |Dirección IP v4|172.18.13.11| 
 | - | - |
@@ -39,23 +40,23 @@ Este comando nos permite ver datos relacionados con la configuración de red de 
 |Nombre del adaptador de red|Ethernet|
 
 + Liberar la configuración IP del adaptador con ***`ipconfig /release`*** y a continuación volver a usar el comando ***`ipconfig`*** . ¿Cuál es la ip ahora?
-
+![resultado](img/2023-01-10_09-31.png)
 la nueva ip es 169.254.110.187
 
 + Ejecutar el comando ***`ipconfig /renew`*** solicitando una renovación de dirección IP. A continuación volver a ejecutar ***`ipconfig`*** . ¿Cuál es la nueva ip?
-
-la nueva ip es 172.18.99.27
+![resultado](img/2023-01-10_09-32.png)
+la nueva ip es 172.18.99.111
 
 + Ejecutar el comando ***`ipconfig /displaydns`*** y comprobar la información que contiene la caché DNS de tu equipo. Ejecuta ahora el comando ***`ipconfig /flushdns`** y después muestra otra vez el contenido de la caché DNS. ¿Qué información muestra ahora? ¿Qué ha ocurrido?*
 
 
 
 + Usar el navegador para ir a la web [https://www.w3schools.com]() y luego ejecutar el comando ***`ipconfig /displaydns`*** . Hacer una captura de pantalla donde se muestre que se ha cacheado la ip de ese nombre de dominio y pegarla aquí debajo.
-
+![resultado](img/2023-01-12_09-26.png)
 
 
 + Borra la caché DNS con el comando ***`ipconfig /flushdns`*** y muestra una captura de pantalla en que se vea que ya no hay registros DNS en caché.
-
+![resultado](img/2023-01-12_09-28.png)
 
 
 ***2. Comando `ifconfig` (Línux)***
@@ -74,6 +75,7 @@ Este comando nos permite mostrar la configuración IP de nuestra máquina y conf
 
 + Ejecuta el comando ***`ifconfig`*** y rellena lo que puedas de la siguiente tabla.
 
+![resultado](img/2023-01-12_09-31.png)
 
 |Dirección IP v4|172.18.13.41|
 | - | - |
@@ -87,18 +89,20 @@ Este comando nos permite mostrar la configuración IP de nuestra máquina y conf
 |Nombre del adaptador de red|enp0s3|
 
 + Desactiva tu tarjeta de red con el comando ***`ifconfig eth0 down`***. A continuación, comprueba con un ***`ifconfig`*** que la tarjeta ya no aparece, se ha desactivado. Haz una captura de pantalla donde se vea que ya no está activada.
-
-
+![resultado](img/2023-01-12_09-46.png)
+![resultado](img/2023-01-12_09-51.png)
 
 + Usa el comando ***`ifconfig –a`*** para ver que la tarjeta está desactivada (pega una captura de pantalla debajo).
-
+![resultado](img/2023-01-12_09-51.png)
 
 + Ahora activa la tarjeta con el comando ***`ifconfig eth0 up`*** y luego con el comando `ifconfig` comprueba que ya está habilitada (pega una captura de pantalla debajo).
+![resultado](img/2023-01-12_09-51_1.png)
 
 + Usa el comando ***`ifconfig eth0 192.168.99.99 netmask 255.255.255.0`*** y pega una captura de pantalla que muestre que el adaptador de red se ha configurado correctamente.
+![resultado](img/2023-01-13_08-18.png)
 
 + Usa el comando ***`ifconfig eth0 IP netmask Máscara`*** (con la configuración inicial de red) y pega una captura de pantalla que muestre que el adaptador de red se ha configurado correctamente.
-
+![resultado](img/2023-01-13_08-20.png)
 
 ***3. Comando ping (Windows y Línux)***
 
@@ -121,14 +125,14 @@ Algunas opciones para Windows/Linux son
 
 
 + Desde una máquina con windows usa el comando ***`ping –i 2 ip\_puertadeenlace`*** para hacer un ping a nuestra puerta de enlace con un TTL igual a 2. 
-
+![resultado](img/2023-01-13_08-38.png)
 
 + Luego haz un ping de las mismas características, pero a google ***`ping –i 2 www.google.es`*** Pega una captura de pantalla con el resultado y explica lo que ha pasado.
-
+![resultado](img/2023-01-13_08-46.png)
 
 
 + El comando ping nos da información sobre el tiempo de latencia de una red. Haz un ping a nuestra puerta de enlace y luego a otro a [www.google.es](http://www.google.es/). Busca información de lo que es el tiempo de latencia y compara los tiempos de latencia en ambos casos. 
-
+![resultado](img/2023-01-13_08-49.png)
 
 
 ***4. Comando route (Línux)***

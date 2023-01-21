@@ -36,11 +36,10 @@ El material usado será el siguiente:
 + RJ45
 + Conector hembra
 
-![RJ45](rj45.jpg)
+![RJ45](conector-rj45-de-8-pines-para-cables-utp-de-cat6.jpg)
 
-![Crimpadora y cable](crimpadoraycable.jpg)
-
-![Ponchadora y conector hembra](ponchadorayhembra.png)
+![Crimpadora y cable]()
+![Ponchadora y conector hembra]()
 #### ***Desarrollo***. <a name="id4"></a>
 
 Primero tomamos un cable, cortamos los extremos para poder desenrollar los cables que tiene dentro y ordenarlos y hacerlos que queden a la misma altura para que haya un buen contacto con las cabeceras.
