@@ -219,21 +219,30 @@ Complete los siguientes pasos para guardar la configuración de inicio en la mem
 a. Examine el contenido de la memoria flash con el comando `show flash` :
 
 ```
+R1#show flash
+
+System flash directory:
+File  Length   Name/status
+  3   33591768 c1900-universalk9-mz.SPA.151-4.M4.bin
+  2   28282    sigdef-category.xml
+  1   227537   sigdef-default.xml
+[33847587 bytes used, 221896413 available, 255744000 total]
+249856K bytes of processor board System flash (Read/Write)
 ```
 ¿Cuántos archivos hay almacenados actualmente en la memoria flash?
 
 ```
-
+3
 ```
 ¿Cuál de estos archivos cree que es la imagen de IOS?
 
 ```
-
+c1900-universalk9-mz.SPA.151-4.M4.bin
 ```
 ¿Por qué cree que este archivo es la imagen de IOS?
 
 ```
-
+Por la longitud del archivo en comparación con otros y la extensión .bin al final del nombre de archivo
 ```
 b. Guarde el archivo de configuración de inicio en la memoria flash con los siguientes comandos:
 ```
@@ -246,5 +255,14 @@ El router le pide que guarde el archivo en la memoria flash con el nombre entre 
 c. Utilice el comando `show flash` para verificar que el archivo de configuración de inicio ahora esté almacenado en la memoria flash.
 
 ``` 
+R1#show flash
 
+System flash directory:
+File  Length   Name/status
+  3   33591768 c1900-universalk9-mz.SPA.151-4.M4.bin
+  2   28282    sigdef-category.xml
+  1   227537   sigdef-default.xml
+  4   1265     startup-config
+[33848852 bytes used, 221895148 available, 255744000 total]
+249856K bytes of processor board System flash (Read/Write)
 ```
