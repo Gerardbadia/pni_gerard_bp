@@ -131,3 +131,8 @@ No vamos a entrar en qué significa exactamente este parámetro. Sólo queremos 
 que funciona. Para ello, veamos ahora la tabla en enrutamiento:
 
 ![](img/007.png)
+
+comprobamos que el paquete viaja desde el pc0 al pc1 a travez de la interfaz `serial 0/1/1` 
+debido a que se trata de una ruta mas optima
+
+![](img/008.png)
